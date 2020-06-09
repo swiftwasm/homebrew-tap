@@ -8,7 +8,7 @@ class Carton < Formula
   stable do
     version "0.0.3"
     url "https://github.com/swiftwasm/carton/archive/#{version}.tar.gz"
-    sha256 "2a6ccbf3f8b8f3c4c84af2c153f2e751ab6debd1"
+    sha256 "45b84cfb31961032cf6bf4e168384c643c2216a3c5c8c25a7cc07bb877e0c23f"
   end
 
   def install
