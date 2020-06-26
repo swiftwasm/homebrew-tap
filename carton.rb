@@ -6,9 +6,9 @@ class Carton < Formula
   depends_on :xcode => "11.4"
 
   stable do
-    version "0.1.5"
+    version "0.2.0"
     url "https://github.com/swiftwasm/carton/archive/#{version}.tar.gz"
-    sha256 "54ccbd45390d42109b4e2c9a2fd185149ff16d2665da480bfbef917c9b98386b"
+    sha256 "35e44746302d86cd69c6bf4cec4dc1488a7d802a0ac9ce50570a51acab3e22b7"
   end
 
   def install
