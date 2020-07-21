@@ -4,6 +4,7 @@ class Carton < Formula
   head "https://github.com/swiftwasm/carton.git"
 
   depends_on :xcode => "11.4"
+  depends_on :wasmer => "0.16.2"
 
   stable do
     version "0.4.0"
