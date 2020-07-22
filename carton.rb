@@ -7,9 +7,9 @@ class Carton < Formula
   depends_on "wasmer"
 
   stable do
-    version "0.4.0"
+    version "0.4.1"
     url "https://github.com/swiftwasm/carton/archive/#{version}.tar.gz"
-    sha256 "18a2f7e7c61b06af7ca2ddeab47813327ebd624dbf1747249515591f464270aa"
+    sha256 "23f79f05c9da183640238454fdcfb8761c8656f6ed72d6d7780afc9d184eafc9"
   end
 
   def install
