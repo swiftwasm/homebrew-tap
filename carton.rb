@@ -9,9 +9,9 @@ class Carton < Formula
   depends_on "wabt"
 
   stable do
-    version "0.6.0"
+    version "0.6.1"
     url "https://github.com/swiftwasm/carton/archive/#{version}.tar.gz"
-    sha256 "76c7197b5a73d36e1c264bff7b5eda9ccd65877337720b6ba3c2862970d501ea"
+    sha256 "9a45943e6cb0d9516fdd205d94a0f025a52a62d50f4861dcb8ad9897bbc10ba8"
   end
 
   def install
