@@ -14,6 +14,12 @@ class Carton < Formula
     sha256 "e2cf209905c98fe07610a009dd831a82b65a0e1002c3ee025b5ac1868e052d65"
   end
 
+  bottle do
+    root_url "https://github.com/swiftwasm/carton/releases/download/0.7.0"
+    cellar :any
+    sha256 "7de1f6d7e41567fdee62ff355b4cde11a68757b35a28021a3b5c7b1bb6e63c7f" => :catalina
+  end
+
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
     system "mv", ".build/release/carton", "carton"
