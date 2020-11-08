@@ -13,6 +13,12 @@ class Carton < Formula
     sha256 "d678aba99a1240fb5b68898509f2c8e40b02d23e6fe199eafa2ee95ba43c1079"
   end
 
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-tap"
+    cellar :any_skip_relocation
+    sha256 "9c4a09edfd1e1387c7302d722fd79de4aa9e84d94d9a411939c7fbd8b624a95c" => :catalina
+  end
+
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
     system "mv", ".build/release/carton", "carton"
