@@ -14,8 +14,8 @@ class Carton < Formula
   end
 
   bottle do
-    root_url "https://homebrew.bintray.com/bottles-tap"
-    cellar :any_skip_relocation
+    root_url "https://github.com/swiftwasm/carton/releases/download/0.8.0"
+    cellar :any
     sha256 "9c4a09edfd1e1387c7302d722fd79de4aa9e84d94d9a411939c7fbd8b624a95c" => :catalina
   end
 
