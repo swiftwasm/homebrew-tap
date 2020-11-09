@@ -8,15 +8,9 @@ class Carton < Formula
   depends_on "binaryen"
 
   stable do
-    version "0.8.0"
+    version "0.8.1"
     url "https://github.com/swiftwasm/carton/archive/#{version}.tar.gz"
-    sha256 "d678aba99a1240fb5b68898509f2c8e40b02d23e6fe199eafa2ee95ba43c1079"
-  end
-
-  bottle do
-    root_url "https://github.com/swiftwasm/carton/releases/download/0.8.0"
-    cellar :any
-    sha256 "9c4a09edfd1e1387c7302d722fd79de4aa9e84d94d9a411939c7fbd8b624a95c" => :catalina
+    sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
   end
 
   def install
