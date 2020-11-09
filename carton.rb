@@ -9,15 +9,11 @@ class Carton < Formula
 
   stable do
     version "0.8.1"
-    url "https://github.com/swiftwasm/carton/archive/#{version}.tar.gz"
+    url "https://github.com/swiftwasm/carton.git", tag: "0.8.2", revision: "90d072a8897eb3e958314fe482f36d0ceb3e8dc5"
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
   end
 
-  bottle do
-    root_url "https://github.com/swiftwasm/carton/releases/download/0.8.1"
-    cellar :any
-    sha256 "310b33287f7ab8bdeb569a815bf95adcfe4ec7e1e5c79f63240dcc488f201a13" => :catalina
-  end
+  
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
