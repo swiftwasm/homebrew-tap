@@ -14,11 +14,7 @@ class Carton < Formula
   end
 
   
-  bottle do
-    root_url "https://github.com/swiftwasm/carton/releases/download/0.9.0"
-    cellar :any
-    sha256 "bc2074f43fcf418907235733bd4ce2cbdef110748d169c303914b06676583a3c" => :catalina
-  end
+  
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
