@@ -21,6 +21,12 @@ class Carton < Formula
     bin.install "carton"
   end
 
+  bottle do
+    root_url "https://github.com/swiftwasm/carton/releases/download/0.9.1"
+    cellar :any
+    sha256 "83a78b915513a2571215eca41c6633c351d158602007d70d9d695b6a843face3" => :catalina
+  end
+
   test do
     system "carton -h"
   end
