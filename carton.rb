@@ -10,6 +10,13 @@ class Carton < Formula
     version "0.10.0"
     url "https://github.com/swiftwasm/carton.git", tag: "0.10.0", revision: "0c918b50193ecb7afc6a2d562d3eb8f3739ee267"
 
+bottle do
+    root_url "https://github.com/swiftwasm/carton/releases/download/0.10.0"
+    
+    sha256 cellar: :any, catalina: "4992f7397691ead70ac44508fd6137bb6d440db235dd1da65b567f03fe7a73bb"
+  end
+
+
     
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
