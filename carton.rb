@@ -27,9 +27,18 @@ class Carton < Formula
   depends_on xcode: "11.4"
 
   def install
-    system "swift", "build", "--disable-sandbox", "-c", "release"
-    system "mv", ".build/release/carton", "carton"
+    system "swift", "build", 
+      "--disable-sandbox", 
+      "-c", "release",
+      "--build-path", buildpath.to_s
+
+    libexec.install buildpath/"release/carton" => "carton"
+    system "install_name_tool", 
+      "-change", "@rpath/libSwiftPMDataModel.dylib", 
+      "@executable_path/../lib/libSwiftPMDataModel.dylib", 
+      "carton"
     bin.install "carton"
+    lib.install buildpath/"release/libSwiftPMDataModel.dylib"
   end
 
   test do
