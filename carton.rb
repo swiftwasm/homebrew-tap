@@ -11,8 +11,8 @@ class Carton < Formula
     url "https://github.com/swiftwasm/carton.git", tag: "0.11.0", revision: "022849f9a2ff7c14dac01c6c095dd1af45676c38"
     
     bottle do
-      rebuild 1
       sha256 cellar: :any, catalina: "b2a179994aa94f35bcd082c071fe2de79559625e363795d6cb520fa874ada583"
+      sha256 cellar: :any, arm64_big_sur: "276e4bc342b141583ab832682f972a1df474bf407db333b200f374902b4cc2b3"
     end
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
