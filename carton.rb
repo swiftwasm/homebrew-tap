@@ -11,6 +11,10 @@ class Carton < Formula
     url "https://github.com/swiftwasm/carton.git", tag: "0.12.1", revision: "b3b060d625972093b72bb6273956a8c5297c217a"
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
+    
+    bottle do
+      sha256 cellar: :any, big_sur: "0118a1ac2562174ae78abdcdaf1f32ceb5161bea3d1b66a1925c87e4cfdeb9c0"
+    end
   end
 
   depends_on "binaryen"
