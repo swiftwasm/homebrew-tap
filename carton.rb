@@ -16,6 +16,7 @@ class Carton < Formula
       root_url "https://github.com/swiftwasm/carton/releases/download/0.12.1"
 
       sha256 cellar: :any, big_sur: "0118a1ac2562174ae78abdcdaf1f32ceb5161bea3d1b66a1925c87e4cfdeb9c0"
+      sha256 cellar: :any, arm64_big_sur: "9ab5b2bf30a08420bf52b88b786550ad7978c89603e135750bc21881a1933135"
     end
   end
 
