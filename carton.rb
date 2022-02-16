@@ -12,7 +12,12 @@ class Carton < Formula
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
     
-    
+    bottle do
+      root_url "https://github.com/swiftwasm/carton/releases/download/0.12.2"
+
+      sha256 cellar: :any, big_sur: "96a62dc27451d2356cc9bbbb1bb5f837d7f4ab038ac143e9d9f4c5f39825b87b"
+      sha256 cellar: :any, arm64_big_sur: "8ed4ab57985b2ba04c87d0ff68bcb29c0377a73774b5f9d3025502f81dd54f30"
+    end
   end
 
   depends_on "binaryen"
