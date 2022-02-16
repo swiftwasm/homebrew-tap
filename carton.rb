@@ -27,13 +27,7 @@ class Carton < Formula
            "-c", "release",
            "--build-path", buildpath.to_s
 
-    system "install_name_tool",
-           "-change", "@rpath/libSwiftPMDataModel.dylib",
-           "@executable_path/../lib/libSwiftPMDataModel.dylib",
-           buildpath/"release/carton"
-
     bin.install buildpath/"release/carton"
-    lib.install buildpath/"release/libSwiftPMDataModel.dylib"
   end
 
   test do
