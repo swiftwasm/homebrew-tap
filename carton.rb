@@ -7,17 +7,12 @@ class Carton < Formula
   head "https://github.com/swiftwasm/carton.git"
 
   stable do
-    version "0.12.1"
-    url "https://github.com/swiftwasm/carton.git", tag: "0.12.1", revision: "b3b060d625972093b72bb6273956a8c5297c217a"
+    version "0.12.2"
+    url "https://github.com/swiftwasm/carton.git", tag: "0.12.2", revision: "7bd54d6c0c7f4fd37204142613e19aeeb543deaa"
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
     
-    bottle do
-      root_url "https://github.com/swiftwasm/carton/releases/download/0.12.1"
-
-      sha256 cellar: :any, big_sur: "0118a1ac2562174ae78abdcdaf1f32ceb5161bea3d1b66a1925c87e4cfdeb9c0"
-      sha256 cellar: :any, arm64_big_sur: "9ab5b2bf30a08420bf52b88b786550ad7978c89603e135750bc21881a1933135"
-    end
+    
   end
 
   depends_on "binaryen"
