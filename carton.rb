@@ -8,10 +8,15 @@ class Carton < Formula
 
   stable do
     version "0.14.0"
-    url "https://github.com/swiftwasm/carton.git", tag: "0.14.0", revision: "45ba9f6d3c37e0696fc84f099ae1687ee50aa9ea"
+    url "https://github.com/swiftwasm/carton.git", tag: "0.14.0", revision: "2fad66cba200fc8bb3b0ca9e83800a9ab198f490"
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
-    
+    bottle do
+      root_url "https://github.com/swiftwasm/carton/releases/download/0.14.0"
+
+      sha256 cellar: :any, big_sur: "2cc42885910a7befc95e21320db5ad88bada23f3f3cd40ebd1330873a497ce60"
+      sha256 cellar: :any, arm64_monterey: "bfe7414c5945de3f1aae6f86a17aa0dd5bd9b36a4c89f34fe2b75a53cf2cc1ee"
+    end
     
   end
 
