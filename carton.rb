@@ -8,7 +8,7 @@ class Carton < Formula
 
   stable do
     version "0.14.2"
-    url "https://github.com/swiftwasm/carton.git", tag: "0.14.2", revision: "d7c4ebe693f6e07d8bc7e5f3d56dbf1ff96848be"
+    url "https://github.com/swiftwasm/carton.git", tag: "0.14.2", revision: "0b44e11222679d493b0fce67fc68511b4246a529"
 
     sha256 "bdf9e259e9abb9d2ff9b68380b08a29c7c4f6a4b1114473593c3fc8afe33e574"
     
