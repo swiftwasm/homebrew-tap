@@ -24,7 +24,7 @@ class Carton < Formula
 
   depends_on "wasmer"
 
-  depends_on xcode: "12.5"
+  depends_on xcode: "13.3.1"
 
   def install
     system "swift", "build",
