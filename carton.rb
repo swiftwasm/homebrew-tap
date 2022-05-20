@@ -15,7 +15,7 @@ class Carton < Formula
     bottle do
       root_url "https://github.com/swiftwasm/carton/releases/download/0.15.0"
 
-      sha256 cellar: :any, big_sur: "01c53ee9569c72c1c0ca03022ba4564e93f15aaf71928fe70628ed55a8d296f4"
+      sha256 cellar: :any, monterey: "f663eaaac2c4a867a98338c9064037397662d4baa8e95f1068e30487ba3af6b2"
       sha256 cellar: :any, arm64_monterey: "5240c5446518defc7e6c78ae9520b701a77b2cabe2bc02e811a5c57c4e5db920"
     end
   end
