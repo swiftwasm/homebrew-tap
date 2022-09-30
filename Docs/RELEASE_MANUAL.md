@@ -12,13 +12,10 @@
 $ brew fetch --force swiftwasm/tap/carton
 $ brew install --build-bottle swiftwasm/tap/carton
 $ brew bottle swiftwasm/tap/carton --no-rebuild
-$ brew bottle swiftwasm/tap/carton
-==> Determining swiftwasm/tap/carton bottle rebuild...
 ==> Bottling carton--0.16.0.arm64_monterey.bottle.1.tar.gz...
 ==> Detecting if carton--0.16.0.arm64_monterey.bottle.1.tar.gz is relocatable...
 ./carton--0.16.0.arm64_monterey.bottle.1.tar.gz
   bottle do
-    rebuild 1
     sha256 cellar: :any_skip_relocation, arm64_monterey: "0f1500b704cc74e77a222c7dd2b37f03b52d1611b3b287938297e9c9d2b7f00a"
   end
 
