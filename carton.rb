@@ -28,6 +28,6 @@ class Carton < Formula
   end
 
   test do
-    system "carton", "-h"
+    system "#{bin}/carton", "-h"
   end
 end
