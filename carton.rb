@@ -9,7 +9,8 @@ class Carton < Formula
 
   bottle do
     root_url "https://github.com/swiftwasm/homebrew-tap/releases/download/carton-0.20.0"
-    sha256 cellar: :any_skip_relocation, ventura: "456aacc96a83fda2257a00c0a704b46858e4e06868babd491fdcb703dd616d6f"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "97ff797df923070ce052c40112c6b709da6d5cfaedff6d459f1c7cedf00668d1"
+    sha256 cellar: :any_skip_relocation, ventura:       "456aacc96a83fda2257a00c0a704b46858e4e06868babd491fdcb703dd616d6f"
   end
 
   depends_on "binaryen"
