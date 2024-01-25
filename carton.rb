@@ -4,14 +4,8 @@
 class Carton < Formula
   desc "Watcher, bundler, and test runner for your SwiftWasm apps"
   homepage "https://carton.dev"
-  url "https://github.com/swiftwasm/carton.git", tag: "0.20.0", revision: "71653a2baef83108ae27854bf98fc8604d97b43b"
+  url "https://github.com/swiftwasm/carton.git", tag: "0.20.1", revision: "33ef59df6f00bf133f63cb0f4f21633ca8a4cfb4"
   head "https://github.com/swiftwasm/carton.git"
-
-  bottle do
-    root_url "https://github.com/swiftwasm/homebrew-tap/releases/download/carton-0.20.0"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "97ff797df923070ce052c40112c6b709da6d5cfaedff6d459f1c7cedf00668d1"
-    sha256 cellar: :any_skip_relocation, ventura:       "456aacc96a83fda2257a00c0a704b46858e4e06868babd491fdcb703dd616d6f"
-  end
 
   depends_on "binaryen"
 
